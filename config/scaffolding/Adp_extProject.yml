@@ -95,8 +95,6 @@ services:
 configurationVariables:
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_extcdt.connectionSettings.dbType
   : ORACLE
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdtert.connectionManagerSettings.minimumPoolSize
-  : "1"
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionSettings.datasourceClass
   : oracle.jdbc.pool.OracleDataSource
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sd.connectionSettings.networkProtocol
@@ -127,8 +125,6 @@ configurationVariables:
   : LOCAL_TRANSACTION
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_extcdt.connectionSettings.transactionType
   : LOCAL_TRANSACTION
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdtert.connectionManagerSettings.maximumPoolSize
-  : "10"
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.user
   : JDBC_BVT
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_extcdt.connectionManagerSettings.heartBeatInterval
@@ -189,8 +185,6 @@ configurationVariables:
   : "1000"
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionSettings.portNumber
   : "1521"
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdtert.connectionManagerSettings.blockingTimeout
-  : "1000"
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sd.connectionSettings.driverType
   : OJDBC
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionManagerSettings.heartBeatInterval
@@ -203,8 +197,6 @@ configurationVariables:
   : ""
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sd.connectionSettings.otherProperties
   : driverType=thin;
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdtert.connectionManagerSettings.startupRetryCount
-  : "0"
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionSettings.networkProtocol
   : ""
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5thsc.connectionSettings.password
@@ -255,8 +247,6 @@ configurationVariables:
   : com.wm.dd.jdbcx.oracle.OracleDataSource
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.otherProperties
   : ""
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdtert.connectionManagerSettings.expireTimeout
-  : "1000"
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sd.connectionManagerSettings.startupRetryCount
   : "0"
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdtert.connectionSettings.otherProperties
@@ -267,8 +257,6 @@ configurationVariables:
   : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdtert.connectionSettings.transactionType
   : LOCAL_TRANSACTION
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdtert.connectionManagerSettings.startupBackoffSecs
-  : "10"
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.transactionType
   : LOCAL_TRANSACTION
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionSettings.dbType
@@ -277,8 +265,6 @@ configurationVariables:
   : ""
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.databaseName
   : ORCL
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdtert.connectionManagerSettings.poolIncrementSize
-  : "1"
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionManagerSettings.poolable
   : "false"
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_sd.connectionSettings.serverName
@@ -303,8 +289,6 @@ configurationVariables:
   : oracle.jdbc.pool.OracleDataSource
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionSettings.transactionType
   : LOCAL_TRANSACTION
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_cdtert.connectionManagerSettings.heartBeatInterval
-  : "0"
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionSettings.otherProperties
   : ""
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionManagerSettings.poolIncrementSize
