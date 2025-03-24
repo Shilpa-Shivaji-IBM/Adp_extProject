@@ -8,6 +8,7 @@ packages:
   gitUsername: Shilpa-Shivaji-IBM
   gitBranch: main
 - name: WmJDBCAdapter
+  version: 10.3.0.0.34
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 services:
@@ -29,7 +30,7 @@ configurationVariables:
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionEnabled
   : "false"
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionManagerSettings.maximumPoolSize
-  : "10"
+  : "3"
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.otherProperties
   : ""
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.user
@@ -43,7 +44,7 @@ configurationVariables:
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.keyStore
   : ""
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionManagerSettings.poolable
-  : "false"
+  : "true"
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.transactionType
   : LOCAL_TRANSACTION
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionManagerSettings.startupBackoffSecs
