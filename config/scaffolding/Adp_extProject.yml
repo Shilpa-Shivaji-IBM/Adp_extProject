@@ -20,6 +20,14 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+- serviceName: project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_CDT
+  packages:
+  - name: Adp_extProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_eee
   packages:
   - name: Adp_extProject
@@ -61,12 +69,10 @@ services:
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
 configurationVariables:
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.portNumber
-  : "1521"
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5thsc.connectionSettings.portNumber
-  : "1521"
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5thsc.connectionSettings.keyStore
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionSettings.keyStore
   : ""
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionSettings.datasourceClass
+  : oracle.jdbc.pool.OracleDataSource
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5thsc.connectionSettings.dbType
   : ORACLE
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionManagerSettings.poolIncrementSize
@@ -79,61 +85,109 @@ configurationVariables:
   : JDBC_BVT
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.trustStore
   : ""
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionEnabled
+  : "false"
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionEnabled
   : "false"
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5thsc.connectionSettings.driverType
-  : Progress® DataDirect®
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionManagerSettings.maximumPoolSize
-  : "3"
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.otherProperties
   : ""
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.user
   : JDBC_BVT
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5thsc.connectionEnabled
-  : "false"
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionSettings.trustStore
+  : ""
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5thsc.connectionSettings.transactionType
   : LOCAL_TRANSACTION
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.datasourceClass
-  : com.wm.dd.jdbcx.oracle.OracleDataSource
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionManagerSettings.blockingTimeout
-  : "1000"
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionSettings.driverType
+  : OJDBC
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.serverName
   : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5thsc.connectionSettings.otherProperties
-  : ""
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.keyStore
   : ""
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionManagerSettings.poolable
   : "true"
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.transactionType
   : LOCAL_TRANSACTION
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionManagerSettings.startupBackoffSecs
-  : "10"
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5thsc.connectionSettings.networkProtocol
-  : ""
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionSettings.dbType
+  : ORACLE
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.databaseName
   : ORCL
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.networkProtocol
-  : ""
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5thsc.connectionSettings.password
-  : "{AES}gOk3wygfWVjWqDc4SLehnQ=="
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.driverType
-  : Progress® DataDirect®
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionManagerSettings.poolable
+  : "false"
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.dbType
   : ORACLE
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionManagerSettings.heartBeatInterval
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionManagerSettings.startupRetryCount
   : "0"
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5thsc.connectionSettings.datasourceClass
-  : com.wm.dd.jdbcx.oracle.OracleDataSource
-  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionManagerSettings.expireTimeout
-  : "1000"
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5thsc.connectionSettings.serverName
   : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionManagerSettings.startupRetryCount
   : "0"
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionManagerSettings.minimumPoolSize
   : "1"
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionManagerSettings.blockingTimeout
+  : "1000"
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.password
   : "{AES}gOk3wygfWVjWqDc4SLehnQ=="
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionSettings.databaseName
+  : ORCL
   ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5thsc.connectionManagerSettings.poolable
   : "false"
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionSettings.password
+  : "{AES}gOk3wygfWVjWqDc4SLehnQ=="
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.portNumber
+  : "1521"
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionSettings.transactionType
+  : LOCAL_TRANSACTION
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5thsc.connectionSettings.portNumber
+  : "1521"
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionSettings.otherProperties
+  : ""
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5thsc.connectionSettings.keyStore
+  : ""
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5thsc.connectionSettings.driverType
+  : Progress® DataDirect®
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionManagerSettings.maximumPoolSize
+  : "3"
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionSettings.portNumber
+  : "1521"
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5thsc.connectionEnabled
+  : "false"
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.oracle.OracleDataSource
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5thsc.connectionSettings.otherProperties
+  : ""
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5thsc.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5thsc.connectionSettings.password
+  : "{AES}gOk3wygfWVjWqDc4SLehnQ=="
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionSettings.driverType
+  : Progress® DataDirect®
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionSettings.user
+  : JDBC_BVT
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5thsc.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.oracle.OracleDataSource
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionSettings.serverName
+  : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_eee.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.Adp_extProject.project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_CDT.connectionManagerSettings.startupBackoffSecs
+  : "10"
