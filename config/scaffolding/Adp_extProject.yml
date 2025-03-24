@@ -20,7 +20,23 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+- serviceName: project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:csql
+  packages:
+  - name: Adp_extProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.adp_ext.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:select
+  packages:
+  - name: Adp_extProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.adp_ext.integrations:csql
   packages:
   - name: Adp_extProject
     version: "1.0"
