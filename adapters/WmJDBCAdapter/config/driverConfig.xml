@@ -6,5 +6,13 @@
             <name>OJDBC</name>
             <path>drivers/ORACLE/OJDBC</path>
         </driver>
+        <driver inUse="false" exists="true">
+            <name>ojdbc</name>
+            <path>drivers/ORACLE/ojdbc</path>
+        </driver>
+        <driver inUse="false" exists="true">
+            <name>fgfd</name>
+            <path>drivers/ORACLE/fgfd</path>
+        </driver>
     </database>
 </driverDetails>
